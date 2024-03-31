@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompleks 3D Obyek dengan A-Frame</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene background="color: #ECECEC">
+        <!-- Obyek 1: Kotak -->
+        <a-box position="-5 1.5 -3" color="#FF5733" scale="1.5 2 1.5"></a-box>
+        <!-- Obyek 2: Silinder -->
+        <a-cylinder position="5 1.25 -3" radius="1.2" height="2" color="#3498DB"></a-cylinder>
+        <!-- Obyek 3: Kerucut -->
+        <a-cone position="0 1.25 -3" radius-bottom="1.2" radius-top="0" height="2" color="#2ECC71" rotation="1 45 1"></a-cone>
+        <!-- Obyek 4: Dodecahedron -->
+        <a-dodecahedron position="-10 1.5 -5" radius="1" color="#9B59B6"></a-dodecahedron>
+        <!-- Obyek 5: Sphere -->
+        <a-sphere position="10 1.25 -5" radius="1.25" color="#E74C3C" material="metalness: 0.5; roughness: 0.5;"></a-sphere>
+
+        <!-- Pencahayaan -->
+        <a-light type="ambient" color="#445451"></a-light>
+        <a-light type="point" intensity="2" position="2 4 4"></a-light>
+
+        <!-- Kamera -->
+        <a-entity camera position="0 2 6" look-controls></a-entity>
+    </a-scene>
+</body>
+</html>
